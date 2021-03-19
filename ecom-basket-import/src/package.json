@@ -1,0 +1,22 @@
+{
+  "name": "ecom-basket-import",
+  "version": "1.0.0",
+  "description": "Imports basket on ecom.cz from csv",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakublevy/web-bots.git"
+  },
+  "author": "Jakub Levý",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakublevy/web-bots/issues"
+  },
+  "homepage": "https://github.com/jakublevy/web-bots#readme",
+  "dependencies": {
+    "puppeteer-core": "latest"
+  }
+}

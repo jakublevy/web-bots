@@ -1,0 +1,17 @@
+{
+  "name": "ikeacz",
+  "version": "1.0.0",
+  "description": "Checks whether SKRUVSTA chair can be ordered from ikeacz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jakub Levý",
+  "license": "ISC",
+  "dependencies": {
+    "node-cron": "latest",
+    "nodemailer": "latest",
+    "puppeteer": "latest"
+  }
+}
