@@ -1,4 +1,4 @@
-# cuni-is-bot
+# cuni-is bot
 (Charles University Information System Bot)
 
 I really hate having to enroll classes manually at midnight hoping that I'll be fast enough to get a place at my preselected tutorials. That's why I decided to create this small python script that automatically enrolls your classes.

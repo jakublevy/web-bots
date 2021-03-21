@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "Jakub Levý",
-  "license": "ISC",
+  "license": "GNU GPLv3",
   "dependencies": {
     "node-cron": "latest",
     "nodemailer": "latest",

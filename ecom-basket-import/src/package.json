@@ -11,7 +11,7 @@
     "url": "git+https://github.com/jakublevy/web-bots.git"
   },
   "author": "Jakub Levý",
-  "license": "ISC",
+  "license": "GNU GPLv3",
   "bugs": {
     "url": "https://github.com/jakublevy/web-bots/issues"
   },
