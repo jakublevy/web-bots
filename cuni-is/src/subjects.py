@@ -4,10 +4,11 @@ from utils import existsElementByValue
 from pyquery import PyQuery
 import datetime
 from web import find_element_by_value
+from selenium.webdriver.common.by import By
 
 
 def enroll(browser, subject):
-    browser.find_element_by_link_text('Zapsat').click()
+    find_element_by_value(browser, 'Zapsat').click()
     if 'tutorial' in subject:
         if existsElementByValue(browser, subject['tutorial']):
             find_element_by_value(browser, subject['tutorial']).click()
@@ -15,14 +16,14 @@ def enroll(browser, subject):
         if existsElementByValue(browser, subject['lecture']):
             find_element_by_value(browser, subject['lecture']).click()
 
-    if existsElementByLinkText(browser, 'Zapsat'):
+    if existsElementByValue(browser, 'Zapsat'):
         find_element_by_value(browser, 'Zapsat').click()
     else:
         find_element_by_value(browser, 'Změnit').click()
 
 
 def isEnrollable(browser):
-    return existsElementByLinkText(browser, 'Zapsat') and isFree(browser.page_source)
+    return browser.find_element(By.XPATH, '//input[@value="Zapsat"]') and isFree(browser.page_source)
 
 
 def isFree(html):

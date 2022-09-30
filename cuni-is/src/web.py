@@ -1,10 +1,11 @@
 from selenium import webdriver
 from selenium.common.exceptions import WebDriverException
+from selenium.webdriver.common.by import By
 from utils import quit
 
 
 def find_element_by_value(browser, value):
-    return browser.find_element_by_xpath('//input[@value=\'' + value + '\']')
+    return browser.find_element(By.XPATH, '//input[@value=\'' + value + '\']')
 
 
 def openBrowser(args):

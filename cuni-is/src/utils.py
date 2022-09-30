@@ -1,10 +1,11 @@
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
 import web
 
 
 def existsElementByLinkText(browser, linkText):
     try:
-        browser.find_element_by_link_text(linkText)
+        browser.find_element(By.LINK_TEXT, linkText)
     except NoSuchElementException:
         return False
     return True
@@ -12,7 +13,7 @@ def existsElementByLinkText(browser, linkText):
 
 def existsElementById(browser, id):
     try:
-        browser.find_element_by_id(id)
+        browser.find_element(By.ID, id)
     except NoSuchElementException:
         return False
     return True
